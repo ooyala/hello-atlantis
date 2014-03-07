@@ -1,12 +1,12 @@
 name = "hello-__APP_TYPE__"
-description = "Hello World Go Server"
+description = "Hello World Ruby Server"
 
 internal = true
 
 image = "precise64"
 app_type = "__APP_TYPE__"
 
-run_commands = ["./hello"]
+run_commands = ["./app.rb"]
 
 dependencies = []
 
