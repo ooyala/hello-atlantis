@@ -2,9 +2,8 @@
 
 copy() {
   basename=$1
-  versions=$2
   rm -rf ${basename}*
-  for at in "${versions[@]}"; do
+  for at in $2; do
     echo "copying $at ..."
     rsync -rv --exclude=.git _$basename/ $at
     sed -i -e "s/__APP_TYPE__/$at/g" $at/manifest.toml
@@ -13,7 +12,5 @@ copy() {
   done
 }
 
-gotypes=( go1.1.2 go1.2 go1.2.1 )
-copy "go" $gotypes
-rubytypes=( ruby1.9.3 )
-copy "ruby" $rubytypes
+copy "go" "go1.1.2 go1.2 go1.2.1"
+copy "ruby" "ruby1.9.3"
