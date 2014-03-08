@@ -1,0 +1,14 @@
+name = "hello-__APP_TYPE__"
+description = "Hello World Python Server"
+
+internal = true
+
+image = "precise64"
+app_type = "__APP_TYPE__"
+
+run_commands = ["python server.py"]
+
+dependencies = []
+
+cpu_shares = 5
+memory_limit = 128
