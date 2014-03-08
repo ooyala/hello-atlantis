@@ -14,3 +14,4 @@ copy() {
 
 copy "go" "go1.1.2 go1.2 go1.2.1"
 copy "ruby" "ruby1.9.3"
+copy "python" "python2.7.3"
