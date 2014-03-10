@@ -1,0 +1,15 @@
+name = "hello-__APP_TYPE__"
+description = "Hello World Go Server"
+
+internal = true
+
+image = "precise64"
+app_type = "java1.7"
+java_type = "__APP_TYPE__"
+
+run_commands = ["./hello"]
+
+dependencies = []
+
+cpu_shares = 5
+memory_limit = 128
