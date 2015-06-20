@@ -1,0 +1,14 @@
+name = "hello-go1.2"
+description = "Hello World Go Server"
+
+internal = true
+
+image = "precise64"
+app_type = "go1.2"
+
+run_commands = ["./hello"]
+
+dependencies = []
+
+cpu_shares = 5
+memory_limit = 128
